@@ -1327,6 +1327,38 @@ a {
 #article-nav #article-nav-older {
   float: right;
 }
+.toc-article {
+  position: fixed;
+  top: 0px; /* 适当的距离顶部的值 */
+  right: 20px; /* 调整到屏幕右侧的位置 */
+  z-index: 1000; /* 确保在其他元素之上显示 */
+  background: #faf0e6;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  margin: 1.5em 0 0.3em 1.5em;
+  padding: 1.2em 1em 0 1em;
+  max-width: 20%;
+  max-height: 50vh; /* 设置最大高度为屏幕高度的80% */
+  overflow-y: auto; /* 添加垂直滚动条 */
+}
+#toc {
+  line-height: 1em;
+  font-size: 0.9em;
+  float: right;
+}
+#toc .toc {
+  padding: 0;
+  margin: 1em;
+  line-height: 1.8em;
+  list-style-type: none; /* 修改列表样式设置方式 */
+}
+#toc .toc-child {
+  margin-left: 1em;
+}
+.custom-toc-item {
+  padding-left: 10px; /* 缩小缩进 */
+  font-size: 0.8em; /* 缩短目录编号 */
+}
 @-moz-keyframes cd-bounce-1 {
   0% {
     opacity: 0;
